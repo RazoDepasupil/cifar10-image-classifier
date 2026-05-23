@@ -13,21 +13,7 @@ A web-based image classification app using a custom CNN trained on the CIFAR-10 
 
 airplane · automobile · bird · cat · deer · dog · frog · horse · ship · truck
 
-## Project Structure
-├── cifar10-prediction/        # Python ML server
-│   ├── model/
-│   │   └── cifar10_model.keras
-│   ├── app.py
-│   └── requirement.txt
-│
-└── cifar10-prediction-webapp/ # Node.js web server + frontend
-├── public/
-│   ├── index.html
-│   ├── script.js
-│   └── style.css
-└── src/
-├── index.js
-└── routes/predict.js
+
 
 ## Getting Started
 
