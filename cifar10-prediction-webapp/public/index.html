@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CIFAR-10 Classifier</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="tag">CIFAR-10 · CNN Classifier</div>
+    <h1>Image <span>Recognition</span></h1>
+    <p>Upload an image and let the model predict its class.</p>
+  </header>
+
+  <div class="card">
+    <div class="drop-zone" id="dropZone">
+      <input type="file" id="fileInput" accept="image/*" />
+      <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+        <polyline points="17 8 12 3 7 8"/>
+        <line x1="12" y1="3" x2="12" y2="15"/>
+      </svg>
+      <p><a>Click to upload</a> or drag & drop</p>
+      <p class="sub">PNG, JPG, JPEG up to 5MB</p>
+    </div>
+
+    <div class="preview-area" id="previewArea">
+      <img id="previewImg" src="" alt="Preview" />
+      <div class="preview-info">
+        <div class="filename" id="previewName"></div>
+        <button class="btn-remove" id="btnRemove">✕ Remove</button>
+      </div>
+    </div>
+
+    <div class="error-msg" id="errorMsg"></div>
+
+    <button class="btn-predict" id="btnPredict" disabled>
+      <div class="spinner" id="spinner"></div>
+      <span id="btnText">Predict</span>
+    </button>
+
+    <div class="result-area" id="resultArea">
+      <div class="result-label">Prediction</div>
+      <div class="result-class" id="resultClass">—</div>
+      <div class="scores-grid" id="scoresGrid"></div>
+    </div>
+  </div>
+
+  <div class="classes-section">
+    <div class="classes-label">Supported Classes</div>
+    <div class="classes-grid">
+      <div class="class-chip">airplane</div>
+      <div class="class-chip">automobile</div>
+      <div class="class-chip">bird</div>
+      <div class="class-chip">cat</div>
+      <div class="class-chip">deer</div>
+      <div class="class-chip">dog</div>
+      <div class="class-chip">frog</div>
+      <div class="class-chip">horse</div>
+      <div class="class-chip">ship</div>
+      <div class="class-chip">truck</div>
+    </div>
+  </div>
+
+<footer>
+  <div class="footer-name">
+    Created by <a href="https://www.facebook.com/razo.depasupil.1">Razo B. Depasupil</a>
+  </div>
+  <div class="footer-course">BSCS 3-B · ISAT-U</div>
+  <div class="footer-stack">
+    <span class="footer-badge">TensorFlow</span>
+    <span class="footer-badge">FastAPI</span>
+    <span class="footer-badge">Node.js</span>
+    <span class="footer-badge">Express</span>
+    <span class="footer-badge">CIFAR-10</span>
+  </div>
+  <div class="footer-copy">© 2026 · Image Recognition · CNN Classifier</div>
+</footer>
+
+  <script src="script.js">
+
+  </script>
+</body>
+</html>

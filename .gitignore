@@ -1,0 +1,21 @@
+# Python
+cifar10-prediction/.venv/
+cifar10-prediction/__pycache__/
+cifar10-prediction/model/__pycache__/
+*.pyc
+
+# Node
+cifar10-prediction-webapp/node_modules/
+
+# Environment variables
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
